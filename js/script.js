@@ -1,9 +1,16 @@
+let turn= "X";
+    function performLogic(button,tile){
+        $(tile).text(turn);
+        if (turn === "X"){
+            turn = "O";     
+        } else{
+            turn = "X";
+        }
+}
 
-
-
-
-
-
+function winnersConditions(){
+    
+    }
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
